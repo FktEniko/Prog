@@ -73,19 +73,19 @@ try{
 	Image pic {Point{600, 200}, "badge.jpg"};
 	pic.set_mask(Point{200,200},200,200); 
 	win.attach(pic);
-	win.set_label("kÈp");
+	win.set_label("k√©p");
 	win.wait_for_button();
 
 	Image pic2 {Point{200, 600}, "badge.jpg"};
 	pic2.set_mask(Point{100,200},200,200); 
 	win.attach(pic2);
-	win.set_label("kÈp2");
+	win.set_label("k√©p2");
 	win.wait_for_button();
 
 	Image pic3 {Point{300 ,0}, "badge.jpg"};
 	pic3.set_mask(Point{100,200},200,200); 
 	win.attach(pic3);
-	win.set_label("kÈp3");
+	win.set_label("k√©p3");
 	win.wait_for_button();
 
 
@@ -96,9 +96,9 @@ try{
 		Image pic4 {Point{xhely ,yhely}, "badge.jpg"};
 		pic4.set_mask(Point{100,200},100,100); 
 		win.attach(pic4);
-		win.set_label("kÈp4");
+		win.set_label("k√©p4");
 		win.wait_for_button();
-		//ezzel eltakarhatja a piros ·tlÛt ·s a m·r berakott kÈpeket
+		//ezzel eltakarhatja a piros √°tl√≥t √°s a m√°r berakott k√©peket
 		xhely=((rand()%8)*100);
 		yhely=((rand()%8)*100);
 }
