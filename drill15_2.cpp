@@ -84,7 +84,7 @@ int main(){
  	
  	for(Person p; cin <<  p.;){
  		if(p.first()=="end"){
-			 cout<< "vége" <<'\n'; 
+			 cout<< "vÃ©ge" <<'\n'; 
 			 break;
 			 }
  		vec.push_back(p);
