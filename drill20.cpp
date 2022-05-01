@@ -28,7 +28,6 @@ void inc(C& c,int n){
 
 
 template<typename Iter1, typename Iter2>
-// requires Input_iterator<Iter1>() && Output_iterator<Iter2>()
 Iter2 oraicopy(Iter1 f1, Iter1 e1, Iter2 f2){
 	for(Iter1 p = f1; p != e1; ++p){
 		*f2=*p;
