@@ -10,18 +10,15 @@ using namespace Graph_lib;
 int main(){
 
         try{
-        //ez egy ablak
         Point t1 {100, 100};
         Simple_window win {t1, 600, 400, "My window"};
         win.wait_for_button();
-        //x-tengely
         Axis xa {Axis::x, Point{20, 300}, 280, 10, "x axis"}; 
         win.attach(xa);
         
         win.set_label("X axis");
         win.wait_for_button();
         
-        //y-tengely és színezgetés
         Axis ya {Axis::y, Point{20, 300}, 280, 10, "y axis"}; 
         ya.set_color(Color::cyan);
         ya.label.set_color(Color::dark_red);
@@ -30,13 +27,11 @@ int main(){
         win.set_label("Y axis");
         win.wait_for_button();
         
-        //sinus függvény
         Function sine {sin, 0, 100, Point{20, 150}, 1000, 50, 50}; 
         win.attach(sine);
         win.set_label("Sine function");
         win.wait_for_button();
-        
-        //háromszög
+       
         Polygon poly; 
         poly.add(Point{300, 200});
         poly.add(Point{350, 100});
@@ -49,7 +44,6 @@ int main(){
         win.set_label("Polygon");
         win.wait_for_button();
         
-        //téglalap
         Rectangle r{Point{200, 200}, 100, 50}; 
         win.attach(r);
         
@@ -65,7 +59,6 @@ int main(){
         win.set_label("Rectangle");
         win.wait_for_button();
         
-        //szinezés vonal stilus
         r.set_fill_color(Color::yellow);
         poly_rect.set_style(Line_style(Line_style::dash, 2));
         poly_rect.set_fill_color(Color::green);
@@ -73,7 +66,6 @@ int main(){
         win.set_label("Fill");
         win.wait_for_button();
         
-        //szöveg
         Text t{Point{150, 150}, "Hello, graphical world!"}; 
         win.attach(t);
         win.set_label("Text");
