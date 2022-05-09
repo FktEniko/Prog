@@ -11,7 +11,7 @@ struct S{
 	const T& get() const;
 	//setter
 	void set(T new_t){val = new_t;}
-	//tultelherés
+	//tultelherÃ©s
 	void operator=(const T& s);
 	private:
  	T val;
@@ -31,7 +31,7 @@ template<typename T>
 	const	T& S<T>::get() const{
 		return val;
 }
-//tultelrhelés
+//tultelrhelÃ©s
 template<typename T>
 void S<T>::operator=(const T& s){
 	val=s;
@@ -52,11 +52,11 @@ std::ostream& operator<<(ostream& os,vector<T&> v){
 	}
 	os<<"}\n";
 	return os;
-//operátor tulterhelés hol fut le cout-ot használd hol futnak a dolgok
+//operÃ¡tor tulterhelÃ©s hol fut le cout-ot hasznÃ¡ld hol futnak a dolgok
 
 }
 
-//bekérés
+//bekÃ©rÃ©s
 template<typename T>
 istream& operator>>(istream is, vector<T>& v)
 {	
@@ -104,9 +104,9 @@ int main(){
 	
 	c.set('s');
 	cout<<"S-char : "<<c.get()<<endl;
-	//lehet egyenlõség jelet használni
+	//lehet egyenlÃµsÃ©g jelet hasznÃ¡lni
 	d=42.1;
-/*
+
 	cout<<"S-double : "<< d.get()<<endl;
 	 int ii;
 	 read_val(ii);
@@ -123,12 +123,12 @@ int main(){
 	cout<<"S-string : "<< s2.get()<<endl;
 	cout<<"S-int : "<< i2.get()<<endl;
 	cout<<"S-double : "<< d2.get()<<endl;
-*/
+
 	cout << "S<vector<int>>: (format: { val, val, val}) ";
     vector<int> vec;
     read_val(vec);
     S<vector<int>> svi2 {vec};
 	
-//	cout << "S<vector<int>> svi2: " << svi2.get()<<endl;
+	cout << "S<vector<int>> svi2: " << svi.get()<<endl;
 
 }
