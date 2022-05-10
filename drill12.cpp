@@ -1,3 +1,5 @@
+//g++ drill12.cpp ../header/Graph.cpp ../header/Window.cpp ../header/GUI.cpp ../header/Simple_window.cpp -o drill12 `fltk-config --ldflags --use-images`
+
 #include "Window.h"
 #include "Graph.h"
 #include "Simple_window.h"
